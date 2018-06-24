@@ -1,6 +1,7 @@
 type Query {
-  applist: AppList,
-  appNews(appid: ID!): AppNews
+  applist(filter: String!): AppList,
+  appNews(appid: ID!): AppNews,
+  appDetails: App
 }
 
 type AppList {
