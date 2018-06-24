@@ -53,7 +53,7 @@ export default class AppList extends React.Component {
     return this.state.apps
       .map((app) => {
         return (
-          <AppCard key={app.appid} name={app.name} />
+          <AppCard key={app.appid} appid={app.appid} name={app.name} />
         );
       });
   }

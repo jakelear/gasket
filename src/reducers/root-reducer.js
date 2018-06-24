@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import apps from './apps';
+import selectedApp from './selected-app';
 
 const rootReducer = combineReducers({
-  apps
+  selectedApp
 });
 
 export default rootReducer;
