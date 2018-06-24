@@ -1,7 +1,7 @@
 type Query {
   applist(filter: String!): AppList,
   appNews(appid: ID!): AppNews,
-  appDetails: App
+  appDetails(appid: ID!): AppDetails
 }
 
 type AppList {
@@ -13,8 +13,21 @@ type App {
   name: String
 }
 
+type AppDetails {
+  name: String
+  type: String
+  detailed_description: String
+  categories: [Category]
+  genres: [Category]
+}
+
 type AppNews {
   newsitems: [NewsItem]
+}
+
+type Category {
+  id: ID
+  description: String
 }
 
 type NewsItem {

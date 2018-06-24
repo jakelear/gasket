@@ -20,9 +20,9 @@ const resolvers = {
     },
     appDetails: (parent, args)  => {
       const { appid } = args;
-      return fetch(`https://store.steampowered.com/api/appdetails/?appids?appids=${appid}`)
+      return fetch(`https://store.steampowered.com/api/appdetails/?appids=${appid}`)
         .then(res => res.json())
-        .then(res => res.appnews);
+        .then(res => res[appid].data);
     }
   },
 }

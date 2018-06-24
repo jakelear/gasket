@@ -1,3 +1,3 @@
-import AppPage from './app-page.component';
+import AppPage from './app-page.container';
 
 export default AppPage;

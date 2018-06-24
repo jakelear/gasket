@@ -3,9 +3,16 @@ import React from 'react';
 
 export default class AppPage extends React.Component {
 
+  componentDidMount () {
+    this.props.getAppDetails(this.props.match.params.id);
+  }
+
   render () {
     return (
-      <h1>App Id: {this.props.match.params.id}</h1>
+      <div>
+        <h1>{this.props.name}</h1>
+        <p>{this.props.description}</p>
+      </div>
     );
   }
 }
