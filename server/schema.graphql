@@ -1,0 +1,22 @@
+type Query {
+  applist: AppList,
+  appNews(appid: ID!): AppNews
+}
+
+type AppList {
+  apps: [App]
+}
+
+type App {
+  appid: ID
+  name: String
+}
+
+type AppNews {
+  newsitems: [NewsItem]
+}
+
+type NewsItem {
+  title: String
+  url: String
+}
