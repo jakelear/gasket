@@ -7,11 +7,15 @@ export default class AppPage extends React.Component {
     this.props.getAppDetails(this.props.match.params.id);
   }
 
+  get description () {
+    return {__html: this.props.description};
+  }
+
   render () {
     return (
       <div>
         <h1>{this.props.name}</h1>
-        <p>{this.props.description}</p>
+        <p dangerouslySetInnerHTML={this.description} />
       </div>
     );
   }
