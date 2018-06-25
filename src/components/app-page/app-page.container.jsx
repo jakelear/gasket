@@ -5,7 +5,8 @@ import AppPage from './app-page.component';
 function mapState ({appDetails}) {
   return {
     name: appDetails.name,
-    description: appDetails.detailed_description
+    description: appDetails.detailed_description,
+    screenshots: appDetails.screenshots
   };
 }
 

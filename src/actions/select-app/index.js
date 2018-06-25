@@ -1,4 +1,4 @@
-import { CLEAR_SELECTED_APP, SELECT_APP } from '../../constants/actions';
+import { SELECT_APP } from '../../constants/actions';
 
 export default function (id) {
   return async (dispatch) => {

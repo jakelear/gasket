@@ -3,7 +3,6 @@ const fetch = require('node-fetch')
 const baseURL = `https://api.steampowered.com`
 const resolvers = {
   Query: {
-
     applist: async (parent, args) => {
       const { filter } = args;
       const results = await fetch(`${baseURL}/ISteamApps/GetAppList/v2`);
@@ -11,7 +10,6 @@ const resolvers = {
       json.applist.apps = json.applist.apps.filter((app) => app.name.toLowerCase().includes(filter.toLowerCase()))
       return json.applist;
     },
-
     appNews: (parent, args)  => {
       const { appid } = args;
       return fetch(`${baseURL}/ISteamNews/GetNewsForApp/v2?appid=${appid}`)

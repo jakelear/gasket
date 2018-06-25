@@ -16,6 +16,10 @@ export default async function getAppDetails (id) {
       genres {
         description
       }
+      screenshots {
+        path_thumbnail
+        path_full
+      }
     }
   }`;
   return queryGraphQL({ query, serialize });

@@ -19,6 +19,7 @@ type AppDetails {
   detailed_description: String
   categories: [Category]
   genres: [Category]
+  screenshots: [Screenshot]
 }
 
 type AppNews {
@@ -33,4 +34,10 @@ type Category {
 type NewsItem {
   title: String
   url: String
+}
+
+type Screenshot {
+  id: ID
+  path_thumbnail: String
+  path_full: String
 }

@@ -4,7 +4,6 @@ import getAppDetails from './query';
 export default function (id) {
   return async (dispatch) => {
     const { data, error } = await getAppDetails(id);
-    console.log(data);
     if (error) {
       dispatch({ error, name: 'loadAppDetails', type: ERROR });
     } else {

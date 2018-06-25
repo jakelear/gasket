@@ -1,5 +1,5 @@
 import React from 'react';
-// import styles from './app-page.module.scss';
+import styles from './app-page.module.scss';
 
 export default class AppPage extends React.Component {
 
@@ -13,7 +13,8 @@ export default class AppPage extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className={styles.appPage}>
+        { /* this.props.screenshots && <img src={this.props.screenshots[0].path_full} /> */ }
         <h1>{this.props.name}</h1>
         <p dangerouslySetInnerHTML={this.description} />
       </div>
