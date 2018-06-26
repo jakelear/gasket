@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter, Route, Switch } from 'react-router-dom';
-import './App.css';
+import './App.scss';
 import AppList from './components/app-list';
 import AppPage from './components/app-page';
 

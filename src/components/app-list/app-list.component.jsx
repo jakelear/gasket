@@ -2,8 +2,7 @@ import React from 'react';
 import AppCard from '../app-card';
 import queryGraphQL from '../../api';
 import debounce from 'lodash.debounce';
-
-// import styles from './app-list.module.scss';
+import styles from './app-list.module.scss';
 
 export default class AppList extends React.Component {
   constructor(props) {
@@ -60,8 +59,8 @@ export default class AppList extends React.Component {
 
   render() {
     return (
-      <div>
-        <input type="text" placeholder="Search for a game" value={this.state.filter} onChange={(e) => this.handleFilter(e.target.value)} />
+      <div className={styles.appList}>
+        <input className={styles.searchInput} type="text" placeholder="Search the store" value={this.state.filter} onChange={(e) => this.handleFilter(e.target.value)} />
         {this.appCards}
       </div>
     )

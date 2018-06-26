@@ -1,0 +1,17 @@
+{
+  "presets": ["stage-2"],
+  "plugins": [
+    "transform-react-jsx",
+    "transform-function-bind"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "jest"
+      ],
+      "plugins": [
+        "transform-es2015-modules-commonjs"
+      ]
+    }
+  }
+}

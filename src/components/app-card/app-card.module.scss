@@ -1,0 +1,19 @@
+.appCard {
+  margin: 20px 0 0;
+}
+
+.appLink {
+  background: #f74843;
+  border: none;
+  color: #000;
+  display: inline-block;
+  font-family: "Apercu", system, sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: all 250ms linear;
+  &:hover {
+    color: #FFF;
+  }
+}
