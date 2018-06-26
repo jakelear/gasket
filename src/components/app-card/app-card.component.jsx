@@ -8,10 +8,14 @@ export default class AppCard extends React.Component {
     this.props.selectApp(this.props.appid);
   }
 
+  get appName () {
+    return {__html: this.props.name};
+  }
+
   render () {
     return (
       <div className={styles.appCard}>
-        <Link className={styles.appLink} to={`/app/${this.props.appid}`} onClick={() => {this.showApp()}}>{ this.props.name }</Link>
+        <Link className={styles.appLink} to={`/app/${this.props.appid}`} onClick={() => {this.showApp()}} dangerouslySetInnerHTML={this.appName} />
       </div>
     );
   }

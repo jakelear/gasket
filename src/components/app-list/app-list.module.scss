@@ -1,5 +1,5 @@
 .appList {
-  background: #000;
+  margin-bottom: 100px;
 }
 
 .searchInput {
@@ -13,15 +13,15 @@
   color: #f74843;
   border-bottom: 2px #fff solid;
   &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #FFF;
+    color: #000;
     opacity: 1; /* Firefox */
   }
 
   &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #FFF;
+    color: #000;
   }
 
   &::-ms-input-placeholder { /* Microsoft Edge */
-      color: #FFF;
+      color: #000;
   }
 }
