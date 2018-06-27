@@ -13,10 +13,10 @@ export default class AppPage extends React.Component {
 
   render () {
     return (
-      <div className={styles.appPage}>
-        { /* this.props.screenshots && <img src={this.props.screenshots[0].path_full} /> */ }
-        <h1>{this.props.name}</h1>
-        <p dangerouslySetInnerHTML={this.description} />
+      <div className={styles.appPage} style={{backgroundImage: `url(${this.props.header_image})`}}>
+        {/* this.props.header_image && <img src={this.props.header_image} />  */}
+        { /* <h1>{this.props.name}</h1> */}
+        { /*<p dangerouslySetInnerHTML={this.description} />*/}
       </div>
     );
   }

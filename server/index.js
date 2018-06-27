@@ -20,7 +20,18 @@ const resolvers = {
       const { appid } = args;
       return fetch(`https://store.steampowered.com/api/appdetails/?appids=${appid}`)
         .then(res => res.json())
-        .then(res => res[appid].data);
+        .then((res) => {
+          res[appid].data.movies.map((movie, index) => {
+            res[appid].data.movies[index] = {
+              id: movie.id,
+              name: movie.name,
+              thumbnail: movie.thumbnail,
+              small: movie.webm[480],
+              large: movie.webm['max']
+            }
+          });
+          return res[appid].data;
+        });
     }
   },
 }

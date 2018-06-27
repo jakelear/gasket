@@ -21,6 +21,8 @@ type AppDetails {
   categories: [Category]
   genres: [Category]
   screenshots: [Screenshot]
+  header_image: String
+  movies: [Movie]
 }
 
 type AppNews {
@@ -35,6 +37,14 @@ type Category {
 type NewsItem {
   title: String
   url: String
+}
+
+type Movie {
+  id: ID
+  name: String
+  thumbnail: String
+  small: String
+  large: String
 }
 
 type Screenshot {

@@ -7,7 +7,7 @@ import AppPage from './components/app-page';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="wrapper">
         <Switch>
           <Route path="/app/:id" component={AppPage} />
           <AppList />

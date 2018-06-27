@@ -20,6 +20,10 @@ export default async function getAppDetails (id) {
         path_thumbnail
         path_full
       }
+      header_image
+      movies {
+        path_thumbnail
+      }
     }
   }`;
   return queryGraphQL({ query, serialize });

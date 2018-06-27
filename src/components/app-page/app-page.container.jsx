@@ -6,7 +6,8 @@ function mapState ({appDetails}) {
   return {
     name: appDetails.name,
     description: appDetails.detailed_description,
-    screenshots: appDetails.screenshots
+    screenshots: appDetails.screenshots,
+    header_image: appDetails.header_image
   };
 }
 
