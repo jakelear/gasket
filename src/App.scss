@@ -50,8 +50,7 @@ table {
 @import './styles/fonts';
 
 html, body {
-  background: lighten(#1c202a, 5%);
-  // background: #FFF;
+  background: #FFF;
   height: 100%;
   width: 100%;
   font-family: "Apercu", -apple-system, system, sans-serif;
@@ -64,13 +63,3 @@ html, body {
   height: 100%;
   width: 100%;
 }
-
-// .wrapper {
-//   background: #FFF;
-//   margin: auto;
-//   height: 80vh;
-//   width: 60vw;
-//   box-shadow: 0 33px 36px -12px rgba(0, 0, 0, 0.3);
-//   overflow: hidden;
-//   position: relative;
-// }
